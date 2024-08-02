@@ -1,12 +1,12 @@
 {
     "log_file": "/etc/vanilla/installer.log",
-    "distro_name": "Vanilla OS",
+    "distro_name": "Puppygirl Vanilla",
     "distro_logo": "org.vanillaos.Installer-flower",
     "images": {
-        "default": "ghcr.io/vanilla-os/desktop:main",
-        "nvidia": "ghcr.io/vanilla-os/nvidia:main",
-        "nvidia-proprietary": "ghcr.io/vanilla-os/nvidia-proprietary:main",
-        "vm": "ghcr.io/vanilla-os/vm:main"
+        "default": "ghcr.io/roxyboxxy/custom:main",
+        "nvidia": "ghcr.io/roxyboxxy/custom:nvidia",
+        "nvidia-proprietary": "ghcr.io/roxyboxxy/custom:main",
+        "vm": "ghcr.io/roxyboxxy/custom:main"
     },
     "default_root_size": 12288,
     "min_disk_size": 51200,
@@ -19,7 +19,7 @@
     "tour": {
         "welcome": {
             "resource": "/org/vanillaos/Installer/assets/welcome.png",
-            "title": "Installing Vanilla OS",
+            "title": "Installing Puppygirl Vanilla OS",
             "description": "The process could take a few minutes, please be patient"
         },
         "control": {
