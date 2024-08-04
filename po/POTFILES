@@ -46,6 +46,7 @@ vanilla_installer/defaults/language.py
 vanilla_installer/defaults/network.py
 vanilla_installer/defaults/image.py
 vanilla_installer/defaults/nvidia.py
+vanilla_installer/defaults/surface.py
 vanilla_installer/defaults/vm.py
 vanilla_installer/defaults/theme.py
 vanilla_installer/defaults/timezone.py

@@ -27,6 +27,7 @@
     <file>gtk/default-network.ui</file>
     <file>gtk/default-image.ui</file>
     <file>gtk/default-nvidia.ui</file>
+    <file>gtk/default-surface.ui</file>
     <file>gtk/default-vm.ui</file>
     <file>gtk/widget-choice.ui</file>
     <file>gtk/widget-choice-expander.ui</file>
@@ -46,6 +47,7 @@
     <file>assets/ready.svg</file>
     <file>assets/containerized.svg</file>
     <file>assets/unsupported.svg</file>
+    <file>assets/Microsoft_Surface.svg</file>
   </gresource>
   <gresource prefix="/org/vanillaos/Installer/icons/scalable/actions/">
     <file preprocess="xml-stripblanks">../data/icons/hicolor/symbolic/actions/background-app-ghost-symbolic.svg</file>

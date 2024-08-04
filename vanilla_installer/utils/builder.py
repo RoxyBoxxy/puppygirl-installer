@@ -27,7 +27,7 @@ from vanilla_installer.defaults.image import VanillaDefaultImage
 from vanilla_installer.defaults.keyboard import VanillaDefaultKeyboard
 from vanilla_installer.defaults.language import VanillaDefaultLanguage
 from vanilla_installer.defaults.network import VanillaDefaultNetwork
-from vanilla_installer.defaults.nvidia import VanillaDefaultNvidia
+from vanilla_installer.defaults. import VanillaDefaultNvidia
 from vanilla_installer.defaults.vm import VanillaDefaultVm
 from vanilla_installer.defaults.timezone import VanillaDefaultTimezone
 from vanilla_installer.defaults.welcome import VanillaDefaultWelcome

@@ -493,6 +493,9 @@ class Processor:
             elif "vm" in final.keys():
                 if final["vm"]["use-vm-tools"]:
                     oci_image = images["vm"]
+            elif "surface" in final.keys():
+                if final["surface"]["use-surface"]:
+                    oci_image = images["surface"]
 
         # Installation
         recipe.set_installation("oci", oci_image)

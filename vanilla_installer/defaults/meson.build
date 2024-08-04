@@ -11,6 +11,7 @@ sources = [
   'encryption.py',
   'image.py',
   'nvidia.py',
+  'surface.py',
   'vm.py',
   'conn_check.py',
   'network.py',
