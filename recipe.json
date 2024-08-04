@@ -7,7 +7,7 @@
         "nvidia": "ghcr.io/roxyboxxy/nvidia:main",
         "nvidia-proprietary": "ghcr.io/roxyboxxy/nvidia:main",
         "vm": "ghcr.io/roxyboxxy/nvidia:main",
-        "surace": "ghcr.io/roxyboxxy/desktop:surface"
+        "surface": "ghcr.io/roxyboxxy/desktop:surface"
     },
     "default_root_size": 12288,
     "min_disk_size": 51200,
@@ -66,17 +66,17 @@
             ],
             "default_image": true
         },
-        "vm": {
-            "template": "vm",
-            "display-conditions": [
-                "grep 'hypervisor' /proc/cpuinfo"
-            ],
-            "default_image": true
-        },
         "surface": {
             "template": "surface",
             "display-conditions": [
                 "grep 'Surface' /sys/devices/virtual/dmi/id/product_family"
+            ],
+            "default_image": true
+        },
+        "vm": {
+            "template": "vm",
+            "display-conditions": [
+                "grep 'hypervisor' /proc/cpuinfo"
             ],
             "default_image": true
         },

@@ -490,12 +490,13 @@ class Processor:
                     oci_image = images["nvidia-propietary"]
                 if final["nvidia"]["use-open"]:
                     oci_image = images["nvidia"]
-            elif "vm" in final.keys():
-                if final["vm"]["use-vm-tools"]:
-                    oci_image = images["vm"]
             elif "surface" in final.keys():
                 if final["surface"]["use-surface"]:
                     oci_image = images["surface"]
+            elif "vm" in final.keys():
+                if final["vm"]["use-vm-tools"]:
+                    oci_image = images["vm"]
+
 
         # Installation
         recipe.set_installation("oci", oci_image)

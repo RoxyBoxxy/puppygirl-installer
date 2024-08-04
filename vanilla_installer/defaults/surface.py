@@ -1,6 +1,7 @@
-# surface.py
+# vm.py
 #
 # Copyright 2024 mirkobrombin
+#
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -16,21 +17,15 @@
 
 from gi.repository import Adw, Gtk
 
-import subprocess
-
 
 @Gtk.Template(resource_path="/org/vanillaos/Installer/gtk/default-surface.ui")
-class VanillaDefaultSurface(Adw.Bin):
+class VanillaDefaultVm(Adw.Bin):
     __gtype_name__ = "VanillaDefaultSurface"
 
     btn_no = Gtk.Template.Child()
     btn_yes = Gtk.Template.Child()
-    btn_info = Gtk.Template.Child()
-
-    info_popover = Gtk.Template.Child()
 
     use_surface = None
-
 
     def __init__(self, window, distro_info, key, step, **kwargs):
         super().__init__(**kwargs)
@@ -40,22 +35,20 @@ class VanillaDefaultSurface(Adw.Bin):
         self.__step = step
         self.delta = False
 
-        self.btn_yes.connect("clicked", self.use_drivers)
-        self.btn_no.connect("clicked", self.no_drivers)
+        self.btn_yes.connect("clicked", self.use_surfacce_fn)
+        self.btn_no.connect("clicked", self.skip_surface_fn)
 
     def get_finals(self):
         return {
             "surface": {
-                "use-surface": self.use_surface
+                "use-surface": self.use_surface,
             }
         }
 
-    def use_drivers(self, _):
-        self.use_surface = True
-        self.__window.next()
-
-    def no_drivers(self, _):
+    def skip_surface_fn(self, _):
         self.use_surface = False
         self.__window.next()
 
-
+    def use_surface_fn(self, _):
+        self.use_surface = True
+        self.__window.next()
