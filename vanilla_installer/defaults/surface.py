@@ -19,7 +19,7 @@ from gi.repository import Adw, Gtk
 
 
 @Gtk.Template(resource_path="/org/vanillaos/Installer/gtk/default-surface.ui")
-class VanillaDefaultVm(Adw.Bin):
+class VanillaDefaultSurface(Adw.Bin):
     __gtype_name__ = "VanillaDefaultSurface"
 
     btn_no = Gtk.Template.Child()
